@@ -2,9 +2,11 @@ package udemy.json.domain;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 @JsonSerialize(using = UdemyJsonSerializer.class)
+@JsonDeserialize(using = UdemyJsonDeserializer.class)
 public class UdemyJson {
 	
 	private long id;
