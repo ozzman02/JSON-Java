@@ -50,9 +50,11 @@ public class DataBindingWrite {
 		mapJson.put("list", Arrays.asList("1", "2", "3"));
 		mapJson.put("date", LocalDateTime.now().toString());
 		
+		final String PATH = "src/main/resources/mapJson.json";
+		
 		try {
 			System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(mapJson));
-			objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("mapJson.json"), mapJson);
+			objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(PATH), mapJson);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
