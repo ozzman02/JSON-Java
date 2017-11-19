@@ -1,5 +1,10 @@
 package udemy.json;
 
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -16,9 +21,35 @@ public class DataBindingWrite {
 		udemyStudent.setName("Oscar");
 		udemyStudent.setLastName("Santamaria");
 		
+		UdemyStudent udemyStudent2 = new UdemyStudent();
+		udemyStudent.setId(2);
+		udemyStudent.setName("Bellamy");
+		udemyStudent.setLastName("Santamaria");
+		
 		try {
 			System.out.println(objectMapper.writeValueAsString(udemyStudent));
 			System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(udemyStudent));
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		
+		Map<String, Object> mapJson = new LinkedHashMap<String, Object>();
+		
+		mapJson.put("key1", "value1");
+		mapJson.put("key2", "value2");
+		mapJson.put("key3", "value3");
+		mapJson.put("booleanTrue", true);
+		mapJson.put("booleanFalse", false);
+		mapJson.put("array", new String[] {"1", "2", "3"});
+		mapJson.put("arrayOfObjects", new UdemyStudent[] {udemyStudent, udemyStudent2});
+		mapJson.put("nestedObject", udemyStudent);
+		mapJson.put("integer", 1);
+		mapJson.put("valueNull", null);
+		mapJson.put("list", Arrays.asList("1", "2", "3"));
+		mapJson.put("date", LocalDateTime.now().toString());
+		
+		try {
+			System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(mapJson));
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
