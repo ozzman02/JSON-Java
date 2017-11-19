@@ -24,9 +24,9 @@ public class DataBindingWrite {
 		udemyStudent.setLastName("Santamaria");
 		
 		UdemyStudent udemyStudent2 = new UdemyStudent();
-		udemyStudent.setId(2);
-		udemyStudent.setName("Bellamy");
-		udemyStudent.setLastName("Santamaria");
+		udemyStudent2.setId(2);
+		udemyStudent2.setName("Bellamy");
+		udemyStudent2.setLastName("Santamaria");
 		
 		try {
 			System.out.println(objectMapper.writeValueAsString(udemyStudent));
