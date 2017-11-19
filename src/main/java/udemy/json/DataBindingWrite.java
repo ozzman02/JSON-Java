@@ -1,5 +1,7 @@
 package udemy.json;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
@@ -50,7 +52,10 @@ public class DataBindingWrite {
 		
 		try {
 			System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(mapJson));
+			objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("mapJson.json"), mapJson);
 		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 

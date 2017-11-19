@@ -1,0 +1,26 @@
+{
+  "key1" : "value1",
+  "key2" : "value2",
+  "key3" : "value3",
+  "booleanTrue" : true,
+  "booleanFalse" : false,
+  "array" : [ "1", "2", "3" ],
+  "arrayOfObjects" : [ {
+    "id" : 2,
+    "name" : "Bellamy",
+    "lastName" : "Santamaria"
+  }, {
+    "id" : 0,
+    "name" : null,
+    "lastName" : null
+  } ],
+  "nestedObject" : {
+    "id" : 2,
+    "name" : "Bellamy",
+    "lastName" : "Santamaria"
+  },
+  "integer" : 1,
+  "valueNull" : null,
+  "list" : [ "1", "2", "3" ],
+  "date" : "2017-11-18T21:30:22.190"
+}
