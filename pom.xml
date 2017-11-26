@@ -4,19 +4,31 @@
 	<groupId>com.json.proyect</groupId>
 	<artifactId>json</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties>
 		<jackson.version>2.7.4</jackson.version>
+		<jsonSchema.version>2.6.0</jsonSchema.version>
+		<jsonSchemaValidator.version>2.2.6</jsonSchemaValidator.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jsonSchema</artifactId>
+			<version>${jsonSchema.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.fge</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>${jsonSchemaValidator.version}</version>
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
