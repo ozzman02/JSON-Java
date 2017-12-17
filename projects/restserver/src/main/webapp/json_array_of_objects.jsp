@@ -17,6 +17,7 @@
 						{id: 4, name: 'JSON with REST', nameLine2: 'Json and Java Lecture', desc: 'Udemy lecture', enabled: true}
 					]
 			};
+			alert(arrayOfObjects.udemyLecture[0].name);
 			
 			document.getElementById("result").innerHTML = JSON.stringify(arrayOfObjects, null, 2);
 			

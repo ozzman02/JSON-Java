@@ -11,5 +11,6 @@
 		<a href="<%= request.getContextPath() %>/json_parse.jsp">JSON parse</a><br/>
 		<a href="<%= request.getContextPath() %>/json_array.jsp">JSON array</a><br/>
 		<a href="<%= request.getContextPath() %>/json_array_of_objects.jsp">JSON array of objects</a><br/>
+		<a href="<%= request.getContextPath() %>/json_nested_objects.jsp">JSON nested objects</a><br/>
 	</body>
 </html>
