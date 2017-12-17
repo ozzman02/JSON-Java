@@ -15,7 +15,7 @@
 					nameLine2: 'Json and Java Lecture',
 					desc: 'Udemy lecture',
 					enabled: true
-			}
+			};
 			
 			/* stringify: convert javascript object to json */
 			var jsonUdemyLecture = JSON.stringify(udemyLecture, null, 2);

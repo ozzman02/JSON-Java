@@ -8,6 +8,8 @@
 	<body>
 		Welcome rest server <br/>
 		<a href="<%= request.getContextPath() %>/json_stringify.jsp">JSON stringify</a><br/>
-		<a href="<%= request.getContextPath() %>/json_parse.jsp">JSON parse</a>
+		<a href="<%= request.getContextPath() %>/json_parse.jsp">JSON parse</a><br/>
+		<a href="<%= request.getContextPath() %>/json_array.jsp">JSON array</a><br/>
+		<a href="<%= request.getContextPath() %>/json_array_of_objects.jsp">JSON array of objects</a><br/>
 	</body>
 </html>
