@@ -12,5 +12,7 @@
 		<a href="<%= request.getContextPath() %>/json_array.jsp">JSON array</a><br/>
 		<a href="<%= request.getContextPath() %>/json_array_of_objects.jsp">JSON array of objects</a><br/>
 		<a href="<%= request.getContextPath() %>/json_nested_objects.jsp">JSON nested objects</a><br/>
+		<a href="<%= request.getContextPath() %>/rest/jsonUdemyStudent">REST Json Udemy Student</a><br/>
+		<a href="<%= request.getContextPath() %>/rest/jsonUdemyStudentList">REST Json Udemy Student List</a><br/>
 	</body>
 </html>
