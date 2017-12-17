@@ -6,7 +6,8 @@
 		<title>REST Server</title>
 	</head>
 	<body>
-		Welcome rest server
-		<a href="<%= request.getContextPath() %>/json_stringify.jsp">JSON Stringify</a>
+		Welcome rest server <br/>
+		<a href="<%= request.getContextPath() %>/json_stringify.jsp">JSON stringify</a><br/>
+		<a href="<%= request.getContextPath() %>/json_parse.jsp">JSON parse</a>
 	</body>
 </html>

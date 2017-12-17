@@ -3,26 +3,21 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>JavaScript JSON stringify sample</title>
+		<title>json parse sample</title>
 	</head>
 	<body>
 		<pre id="result"></pre>
 		<script type="text/javascript">
 			
-			var udemyLecture = {
-					id: 1,
-					name: 'JSON with Java',
-					nameLine2: 'Json and Java Lecture',
-					desc: 'Udemy lecture',
-					enabled: true
-			}
-			
-			/* stringify: convert javascript object to json */
-			var jsonUdemyLecture = JSON.stringify(udemyLecture, null, 2);
+			var jsonUdemyLecture = "{\"id\": 1, \"name\": \"JSON with Java\", \"nameLine2\": \"Json and Java Lecture\"," + 
+				"\"desc\": \"Udemy lecture\", \"enabled\": true}";
 			
 			console.log(jsonUdemyLecture);
 			
-			document.getElementById("result").innerHTML = jsonUdemyLecture;
+			/* string to javascript */
+			var udemyLecture = JSON.parse(jsonUdemyLecture);
+			
+			document.getElementById("result").innerHTML = "id: " + udemyLecture.id + " name: " + udemyLecture.name;
 			
 		</script>
 	</body>
