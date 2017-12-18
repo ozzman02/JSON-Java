@@ -6,7 +6,7 @@
 		<title>REST Server</title>
 	</head>
 	<body>
-		Welcome rest server <br/>
+		Welcome rest server <br/><br/>
 		<a href="<%= request.getContextPath()%>/json_stringify.jsp">JSON stringify</a><br/>
 		<a href="<%= request.getContextPath()%>/json_parse.jsp">JSON parse</a><br/>
 		<a href="<%= request.getContextPath()%>/json_array.jsp">JSON array</a><br/>
@@ -14,7 +14,8 @@
 		<a href="<%= request.getContextPath()%>/json_nested_objects.jsp">JSON nested objects</a><br/>
 		<a href="<%= request.getContextPath()%>/rest/jsonUdemyStudent">REST Json Udemy Student</a><br/>
 		<a href="<%= request.getContextPath()%>/rest/jsonUdemyStudentList">REST Json Udemy Student List</a><br/>
-		<a href="<%= request.getContextPath()%>/jquery_json_get.jsp">REST jQuery json get</a><br/>
+		<a href="<%= request.getContextPath()%>/jquery_json_get.jsp">REST jQuery json GET</a><br/>
 		<a href="<%= request.getContextPath()%>/jquery_json_list.jsp">REST jQuery json list</a><br/>
+		<a href="<%= request.getContextPath()%>/jquery_json_post.jsp">REST jQuery json POST</a><br/>
 	</body>
 </html>

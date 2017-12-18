@@ -31,5 +31,10 @@ public class UdemyStudent {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	@Override
+	public String toString() {
+		return "UdemyStudent [id=" + id + ", name=" + name + ", lastName=" + lastName + "]";
+	}
 	
 }
