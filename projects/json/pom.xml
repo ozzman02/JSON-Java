@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<jackson.version>2.7.4</jackson.version>
+		<jackson.version>2.10.2</jackson.version>
 		<jsonSchema.version>2.6.0</jsonSchema.version>
 		<jsonSchemaValidator.version>2.2.6</jsonSchemaValidator.version>
 	</properties>
