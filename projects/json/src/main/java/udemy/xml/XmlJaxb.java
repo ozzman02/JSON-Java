@@ -1,7 +1,5 @@
 package udemy.xml;
 
-import java.io.IOException;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector;
@@ -38,10 +36,7 @@ public class XmlJaxb {
 			
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
+		} 
 
 	}
 
